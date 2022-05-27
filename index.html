@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>APOD</title>
 </head>
   <body>
@@ -17,12 +18,18 @@
   <main>
       <form id="dateSelect" action="">
         <p>Digite a data que deseja aqui : </p>
-        <input id="dateSearch" type="date" name="date">
-        <button id="btnSearch" type="button">Pesquisar</button>
+        <input id="dateSearch" type="date" name="date" >
+        <button onclick="chama()" id="btnSearch" type="button"> Pesquisar
+        </button>
       </form>
     </div>
     <p id="date"></p>
-    <iframe id="frame"></iframe>
+    <iframe id="frame" src="Frame/index2.html">
+      
+    </iframe>
+    
+      
+   
 
     <p id="title"></p>
     <p id="autor"></p>

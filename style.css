@@ -45,6 +45,9 @@ p {
   height: 500px;
   border: 3px solid #04003a;
   border-radius: 20px;    
+  /* background-image: url(https://apod.nasa.gov/apod/image/2205/Needle_Galaxy_4-7-22.jpg); */
+  background-size: cover;
+  background-position: center center;
 }
 
 #title {
